@@ -1,4 +1,4 @@
-# Idea2Img
+# [Idea2Img](https://idea2img.github.io/) <img src="https://idea2img.github.io/images/icon.png" width="75%"/>
 [Idea2Img: Iterative Self-Refinement with GPT-4V(ision) for Automatic Image Design and Generation](https://arxiv.org/pdf/2310.08541.pdf)
 
 by [Zhengyuan Yang](http://zhengyuan.info/), [Jianfeng Wang](https://scholar.google.com/citations?user=vJWEw_8AAAAJ&hl=en), [Linjie Li](https://scholar.google.com/citations?user=WR875gYAAAAJ&hl=en), [Kevin Lin](https://sites.google.com/site/kevinlin311tw/me), [Chung-Ching Lin](https://www.microsoft.com/en-us/research/people/chunglin/), [Zicheng Liu](https://zicliu.wixsite.com/mysite), and [Lijuan Wang](https://www.microsoft.com/en-us/research/people/lijuanw/)
@@ -22,7 +22,7 @@ Built upon GPT-4V(ision), [Idea2Img](https://arxiv.org/pdf/2310.08541.pdf) is a 
 
 ### Prerequisites
 
-* Obtain the public [OpenAI GPT-4V API key](https://platform.openai.com/docs/guides/vision) and prepare [T2I models access](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0).
+* Obtain the public [OpenAI GPT-4V API key](https://platform.openai.com/docs/guides/vision) and prepare [Huggingface SDXL access](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0).
 
 ## Installation
 
@@ -38,7 +38,6 @@ Built upon GPT-4V(ision), [Idea2Img](https://arxiv.org/pdf/2310.08541.pdf) is a 
     ```
     mkdir output
     python idea2img_pipeline.py --api_key OAI_GPT4V_Key --huggingface_key Huggingface_SDXL_key --testfile testsample.txt --fewshot --select_fewshot
-
     ```
 
 ### Results
