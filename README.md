@@ -22,7 +22,7 @@ Built upon GPT-4V(ision), [Idea2Img](https://arxiv.org/pdf/2310.08541.pdf) is a 
 
 ### Prerequisites
 
-* Obtain the public [OpenAI GPT-4V API key](https://platform.openai.com/docs/guides/vision) and prepare [Huggingface SDXL access](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0).
+* Obtain the public [OpenAI GPT-4V API key](https://platform.openai.com/docs/guides/vision) and setup T2I inference accordingly, e.g., [SDXL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0).
 
 ## Installation
 
@@ -37,7 +37,7 @@ Built upon GPT-4V(ision), [Idea2Img](https://arxiv.org/pdf/2310.08541.pdf) is a 
 
     ```
     mkdir output
-    python idea2img_pipeline.py --api_key OAI_GPT4V_Key --huggingface_key Huggingface_SDXL_key --testfile testsample.txt --fewshot --select_fewshot
+    python idea2img_pipeline.py --api_key OAI_GPT4V_Key --testfile testsample.txt --fewshot --select_fewshot
     ```
 
 ### Results
