@@ -1,0 +1,2 @@
+painting of a corgi dog with style similar to this one in the image <IMG>input_img/style4.jpg
+painting of a corgi dog with style different from this one in the image <IMG>input_img/style4.jpg
