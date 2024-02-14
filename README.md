@@ -1,4 +1,4 @@
-# [Idea2Img](https://idea2img.github.io/) <img src="./icon.png" width="75%"/>
+# [Idea2Img](https://idea2img.github.io/) <img src="./icon.png" width="5%"/>
 [Idea2Img: Iterative Self-Refinement with GPT-4V(ision) for Automatic Image Design and Generation](https://arxiv.org/pdf/2310.08541.pdf)
 
 by [Zhengyuan Yang](http://zhengyuan.info/), [Jianfeng Wang](https://scholar.google.com/citations?user=vJWEw_8AAAAJ&hl=en), [Linjie Li](https://scholar.google.com/citations?user=WR875gYAAAAJ&hl=en), [Kevin Lin](https://sites.google.com/site/kevinlin311tw/me), [Chung-Ching Lin](https://www.microsoft.com/en-us/research/people/chunglin/), [Zicheng Liu](https://zicliu.wixsite.com/mysite), and [Lijuan Wang](https://www.microsoft.com/en-us/research/people/lijuanw/)
