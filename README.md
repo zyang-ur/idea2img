@@ -5,20 +5,12 @@ by [Zhengyuan Yang](http://zhengyuan.info/), [Jianfeng Wang](https://jianfengwan
 
 
 ### Introduction
-Built upon GPT-4V(ision), [Idea2Img](https://arxiv.org/pdf/2310.08541.pdf) is a multimodal iterative self-refinement system that enhances any T2I model for automatic image design and generation, enabling various new image creation functionalities togther with better visual qualities.
+Built upon GPT-4V(ision), [Idea2Img](https://idea2img.github.io/) is a multimodal iterative self-refinement system that enhances any T2I model for automatic image design and generation, enabling various new image creation functionalities togther with better visual qualities.
 
 <p align="center">
   <img src="https://idea2img.github.io/images/teaser.png" width="75%"/>
 </p>
 
-### Citation
-
-    @article{yang2023idea2img,
-      title={Idea2img: Iterative self-refinement with gpt-4v (ision) for automatic image design and generation},
-      author={Yang, Zhengyuan and Wang, Jianfeng and Li, Linjie and Lin, Kevin and Lin, Chung-Ching and Liu, Zicheng and Wang, Lijuan},
-      journal={arXiv preprint arXiv:2310.08541},
-      year={2023}
-    }
 
 ### Prerequisites
 
@@ -46,3 +38,12 @@ Built upon GPT-4V(ision), [Idea2Img](https://arxiv.org/pdf/2310.08541.pdf) is a 
 <p align="center">
   <img src="./main_de3.png" width="75%"/>
 </p>
+
+### Citation
+
+    @article{yang2023idea2img,
+      title={Idea2img: Iterative self-refinement with gpt-4v (ision) for automatic image design and generation},
+      author={Yang, Zhengyuan and Wang, Jianfeng and Li, Linjie and Lin, Kevin and Lin, Chung-Ching and Liu, Zicheng and Wang, Lijuan},
+      journal={arXiv preprint arXiv:2310.08541},
+      year={2023}
+    }

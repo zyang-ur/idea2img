@@ -306,7 +306,7 @@ def main():
     parser = argparse.ArgumentParser()
 
     parser.add_argument("--api_key", type=str, help="OpenAI GPT-4V API key; https://platform.openai.com/docs/guides/vision")
-    parser.add_argument("--huggingface_key", type=str, help="huggingface SDXL key")
+    # parser.add_argument("--huggingface_key", type=str, help="huggingface SDXL key")
     parser.add_argument("--testfile", type=str, default="testsample.txt")
     parser.add_argument("--num_img", type=int, default=1, help="number of images to generate per prompt")
     parser.add_argument("--num_prompt", type=int, default=3, help="number of prompts to search each round")
@@ -320,9 +320,9 @@ def main():
     args = parser.parse_args()
     assert(args.num_img==1)
 
-    from huggingface_hub import login
-    access_token_write = args.huggingface_key
-    login(token = access_token_write)
+    # from huggingface_hub import login
+    # access_token_write = args.huggingface_key
+    # login(token = access_token_write)
 
     global api_key
     api_key = args.api_key
@@ -400,14 +400,14 @@ def main():
                 os.system('cp %s output/%s/round1/%s.png'%(image_history[-1],args.foldername,user_prompt.replace(' ','').replace('.','')))
         ## save indexed image
         os.system('cp %s output/%s/iter/%s.png'%(image_history[-1],args.foldername,user_prompt.replace(' ','').replace('.','')))
-        if True:
-            start_ind = 1
-            global_best, select_response = gptv_reflection_prompt_selectbest(user_prompt, img_prompt, idea_transcript, image_history[start_ind:], args)
-            global_best += start_ind
-            os.system('cp %s output/%s/iter_best/%s.png'%(image_history[global_best],args.foldername,user_prompt.replace(' ','').replace('.','')))
-            with open(text_record, 'a') as f:
-                f.write('Final selection: %d. || '%global_best+select_response)
-                f.write('===========\nFinal Selection: Round: %d.\n==========='%global_best)
+
+        start_ind = 1
+        global_best, select_response = gptv_reflection_prompt_selectbest(user_prompt, img_prompt, idea_transcript, image_history[start_ind:], args)
+        global_best += start_ind
+        os.system('cp %s output/%s/iter_best/%s.png'%(image_history[global_best],args.foldername,user_prompt.replace(' ','').replace('.','')))
+        with open(text_record, 'a') as f:
+            f.write('Final selection: %d. || '%global_best+select_response)
+            f.write('===========\nFinal Selection: Round: %d.\n==========='%global_best)
     for key in ['round1','iter','iter_best']:
         os.system('cp -r output/%s/%s output/%s/tmp/%s'%(args.foldername,key,args.foldername,key))
 
